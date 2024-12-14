@@ -1,0 +1,6 @@
+## a program that calculates factorial of numbers
+def factorial(n):
+  return 1 if n == 0 else n * factorial(n-1)
+  
+num=int(input("enter a number:"))
+print(f"factorial of {num}is{factorial(num)}")
