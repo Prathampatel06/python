@@ -1,0 +1,6 @@
+## a program that shorts a list of number in ascending and decending order 
+numbers=list(map(float,input("Enter number:\n").split()))
+order=input("sort(a)scending or (d)ecending?\n").lower()
+print(sorted(numbers)
+if order =="a"
+else sorted(numbers,reverse=True))
