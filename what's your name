@@ -1,0 +1,2 @@
+data =("pratham","patel", 234345.1)
+print("hello Mr. %s %s your balance is %.2f" % data)
