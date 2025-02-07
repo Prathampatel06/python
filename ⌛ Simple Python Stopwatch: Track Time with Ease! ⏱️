@@ -1,0 +1,32 @@
+import time
+
+def stopwatch():
+    print("Welcome to the Basic Stopwatch!")
+    print("Type 'start' to begin, 'stop' to stop, and 'quit' to exit.")
+    
+    while True:
+        command = input("Enter command: ").lower()
+        
+        if command == 'quit':
+            print("Thanks for using the stopwatch!")
+            break
+        elif command == 'start':
+            start_time = time.time()
+            print("Stopwatch started. Type 'stop' to stop the timer.")
+            
+            while True:
+                stop_command = input("Enter command: ").lower()
+                if stop_command == 'stop':
+                    end_time = time.time()
+                    elapsed_time = round(end_time - start_time, 2)
+                    print(f"Time elapsed: {elapsed_time} seconds.")
+                    break
+                elif stop_command == 'quit':
+                    print("Thanks for using the stopwatch!")
+                    return
+                else:
+                    print("Invalid command. Type 'stop' to stop the timer or 'quit' to exit.")
+        else:
+            print("Invalid command. Type 'start' to begin, 'stop' to stop, and 'quit' to exit.")
+            
+stopwatch()
